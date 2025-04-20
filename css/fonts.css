@@ -1,0 +1,66 @@
+/* Light */
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('NotoSans'), 
+          url('../fonts/NotoSans-Light.woff2') format('woff2'), 
+          url('../fonts/NotoSans-Light.woff') format('woff'),
+          url('../fonts/NotoSans-Light.ttf') format('truetype'),
+          url('../fonts/NotoSans-Light.otf') format('opentype');
+  }
+  /* Regular */
+  @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSans'), 
+        url('../fonts/NotoSans-Regular.woff2') format('woff2'), 
+        url('../fonts/NotoSans-Regular.woff') format('woff'),
+        url('../fonts/NotoSans-Regular.ttf') format('truetype'),
+        url('../fonts/NotoSans-Regular.otf') format('opentype');
+  }
+  /* Medium */
+  /* @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('NotoSans'), 
+        url('../fonts/NotoSans-Medium.woff2') format('woff2'), 
+        url('../fonts/NotoSans-Medium.woff') format('woff'),
+        url('../fonts/NotoSans-Medium.ttf') format('truetype'),
+        url('../fonts/NotoSans-Medium.otf') format('opentype');
+  } */
+  /* Bold */
+  @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('NotoSans'),
+        url('../fonts/NotoSans-Bold.woff2') format('woff2'), 
+        url('../fonts/NotoSans-Bold.woff') format('woff'),
+        url('../fonts/NotoSans-Bold.ttf') format('truetype'),
+        url('../fonts/NotoSans-Bold.otf') format('opentype');
+  }
+  /* Black */
+  /* @font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('NotoSans'),
+        url('../fonts/NotoSans-Black.woff2') format('woff2'), 
+        url('../fonts/NotoSans-Black.woff') format('woff'),
+        url('../fonts/NotoSans-Black.ttf') format('truetype'),
+        url('../fonts/NotoSans-Black.otf') format('opentype');
+  } */
+
+  @font-face {
+    font-family: 'NanumMyeongjo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NanumMyeongjo'),
+        url('../fonts/NanumMyeongjoR.woff2') format('woff2'), 
+        url('../fonts/NanumMyeongjoR.woff') format('woff'),
+        url('../fonts/NanumMyeongjoR.ttf') format('truetype'),
+        url('../fonts/NanumMyeongjoR.otf') format('opentype');
+  }

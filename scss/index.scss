@@ -1,0 +1,519 @@
+img {
+	max-width: 100%;
+	height: auto;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;	
+	z-index: 10;
+}
+
+.header--inner {
+	position: relative;
+	height: 10rem;
+	box-shadow: 1px 1.7px 2px 0 rgba(1, 1, 1, 0.1);
+	background-color: #fff;
+	transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+}
+header {
+	h1 {
+		position: absolute;
+    top: 50%;
+    left: 5.1rem;
+    transform: translateY(-55%);
+    z-index: 2;
+	}
+	.header--menu {
+		display: none;
+		z-index: 2;
+		position: absolute;
+		width: 6.5rem;
+		height: 6.5rem;
+		top: 0;
+		right: 0;
+		transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+		.lines {
+			display: block;
+			overflow: hidden;
+			//text-indent: -5260px;
+			position: relative;
+			width: 6.5rem;
+			height: 6.5rem
+		}
+		.line-1, .line-2, .line-3, .line-4 {
+			transition: all .3s cubic-bezier(0.165, 0.84, 0.44, 1) 0s;
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-left: -1.4rem;
+			width: 2.8rem;
+			height: 2px;
+			background: #333;
+		}
+		.line-1 {
+			margin-top: -1rem
+		}
+		.line-2, .line-3 {
+			margin-top: -1px
+		}
+		.line-2 {
+			opacity: 0
+		}
+		.line-4 {
+			margin-top: 0.8rem
+		}
+	}
+}
+
+nav {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+	//zoom: 1;
+
+	ul {
+		float: left;
+		display: table;
+		height: 10rem;
+	}
+	li {
+		display: table-cell;
+		vertical-align: middle;
+		
+		a {
+			display: table;
+			height: 100%;
+			padding: 0 2.9rem;
+			font-weight: 300;
+			font-size: 2.1rem;
+		}
+		span {
+			display: table-cell;
+    	vertical-align: middle;
+		}
+	}
+	.country-list a {
+		padding: 0 1.8rem;
+	}
+}
+
+#main {
+	padding-top: 10rem;
+}
+
+section {
+	text-align: center;
+}
+.about {
+	position: relative;
+	width: 100%;
+	height: 86rem;
+	background: #63bcaa;
+
+	.moji {
+		background: url(../images/moji_main.png) no-repeat;
+		padding-top: 39.5625%;
+    background-size: cover;
+	}
+	.inner {
+		position: relative;
+		height: 100%;
+		margin: 0 auto;
+		padding: 158px 0 29px 0;
+		box-sizing: border-box;
+	}
+	.moji {
+		position: absolute;
+    right: 0;
+		//top: 0;
+		bottom: 0;
+		left: 0;
+    //width: 100%;
+	}
+	.about--title {
+		position: relative;
+		top: 0;
+	}
+	.about--txt {
+		position: relative;
+		top: 93px;
+
+		p {
+			padding-bottom: 4rem;
+
+			&:first-child {
+				padding-bottom: 3.2rem;
+			}
+		}
+	}
+}
+section {
+	h3 {
+		font-size: 5rem;
+		font-weight: 700;
+		color: #fff;
+		padding-top: 9.6rem;
+		padding-bottom: 5.8rem;
+	}
+	.info--txt {
+		font-size: 2.3rem;
+		font-weight: 300;
+		color: #fff;
+		text-align: left;
+		line-height: 1.4;
+		letter-spacing: -0.035em;
+		word-spacing: -0.02em;
+		margin-bottom: 3.9rem;
+	}
+}
+.media--list {
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		width: 222px;
+		//height: 43px;
+		border-radius: 5px;
+		background: #fff;
+		padding: 11px 0;
+		margin: 0 12px 17px 16px;
+	}
+	a {
+		display: block;
+		font-size: 2.25rem;
+		color: #ed706f;
+	}
+}
+.musical--list {
+	max-width: 113.9rem;
+	margin: 0 auto;
+	li {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		width: 56.2rem;
+		margin-bottom: 3rem;
+
+		&:nth-child(odd) {
+			margin-right: 10px;
+		}
+	}
+	.btn--info {
+		position: absolute;
+		top: 25.8rem;
+		right: 2.2rem;
+	}
+}
+.musical--schedule {
+	background-image: url(../images/main_bg02.jpg);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: cover;
+	//padding-top: 70.625%; /* 1356/1920 */
+
+	.media--list {
+		li {
+			display: inline-block;
+    	vertical-align: middle;
+			width: 222px;
+			//height: 43px;
+			border-radius: 5px;
+			background: #fff;
+			padding: 11px 0;
+			margin: 0 12px 17px 16px;
+		}
+		a {
+			display: block;
+			font-size: 2.25rem;
+			color: #ed706f;
+		}
+	}
+	.musical--list {
+		max-width: 113.9rem;
+		margin: 0 auto;
+		li {
+			position: relative;
+			display: inline-block;
+			vertical-align: middle;
+			width: 56.2rem;
+			margin-bottom: 3rem;
+
+			&:nth-child(odd) {
+				margin-right: 10px;
+			}			
+		}
+		.btn--info {
+			position: absolute;
+			top: 25.8rem;
+			right: 2.2rem;
+		}
+	}
+}
+.musical--info {
+	.musical--info_inner {
+		position: relative;
+	}
+	.musical--info_photo {
+		background: url(../images/bg_patten1.png);
+		background-repeat: no-repeat;
+		//background-position: 50%;
+		background-size: cover;		
+		//background-position: 0 28px;
+		overflow: hidden;
+		margin-top: 3.5rem;
+		padding-top: 4.4rem;
+		padding-bottom: 4.4rem;
+		//padding-bottom: 4.4rem;
+
+		li {
+			margin-bottom: 10px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.photo--poster {
+		margin-right: 10px;
+	}
+	.photo--poster, ul {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.musical--info_name {
+		//padding-top: 17.7%;
+
+		img {
+			padding: 18.2rem 0;
+		}
+	}
+	h3 {
+		padding-top: 9.6rem;
+		padding-bottom: 9.3rem;
+	}
+	&_contents {
+		max-width: 111rem;
+		margin: 0 auto;
+
+		// p:first-child {
+		// 	margin-top: 9rem;
+		// 	margin-bottom: 8.3rem;
+		// }
+		pre:first-child {
+			font-family: 'NanumMyeongjo';
+			font-size: 3rem;
+			margin-top: 9rem;
+			margin-bottom: 8.3rem;
+		}
+	}
+}
+.musical--info01 {
+	background: #ef957a;
+
+	.musical--info_inner {
+		background: #ea8266;
+	}
+	.musical--info_name {
+		background-image: url(../images/perform1/perform1_img.jpg);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+		background-attachment: fixed;
+		//padding-bottom: 13%;
+		padding-top: 35.885417%; /* 689/1920 */
+	}
+	.emoji {
+		position: absolute;
+		top: 29.9rem;
+		left: 50%;
+		margin-left: 32.3rem;
+    //right: 6.9rem;
+	}
+}
+.musical--info02 {
+	.musical--info_inner {
+		background: #63bcaa;
+	}
+	.musical--info_name {
+		background-image: url(../images/perform2/perform2_img.jpg);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+		background-attachment: fixed;
+		//padding-bottom: 13%;
+	}
+	.musical--info_photo {
+		//background-position: 0 28px;
+	}
+	.emoji {
+		position: absolute;
+    top: 41rem;
+    left: 0;
+	}
+}
+.musical--info03 {
+	.musical--info_inner {
+		background: #eeaeaf;
+	}
+	.musical--info_name {
+		background-image: url(../images/perform3/perform3_img.jpg);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+		background-attachment: fixed;
+		//padding-bottom: 13%;
+	}
+	.emoji {
+		position: absolute;
+    top: 29.7rem;
+    right: 0;
+	}
+}
+.musical--info04 {
+	.musical--info_inner {
+		background: #eee4d9;
+	}
+	.musical--info_photo {
+		width: 100%;
+		background: url(../images/perform4/bg22.jpg);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+		//height: 869px;
+	}
+	.musical--info_name {
+		background-image: url(../images/perform4/perform4_img.jpg);
+		background-repeat: no-repeat;
+		background-position: 50%;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	.emoji {
+		position: absolute;
+    top: 23.2rem;
+    left: 10rem;
+	}
+	.info--txt {
+		color: #333;
+	}
+	ul.info--txt {
+		display: block;
+	}
+}
+
+.notice {
+	background: url(../images/notice_bg.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 96px;
+	padding-bottom: 163px;
+	//background: #ea8266;
+
+	.emoji {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+footer {
+	background: #332f57;
+	padding: 7.8rem 0 6.4rem 0;
+	text-align: center;
+	color: #fff;
+
+	.share-list li {
+		display: inline-block;
+		vertical-align: middle;
+		width: 112px;
+		border: 1px solid #fff;
+		margin: 0 11px;
+
+		a {
+			display: block;
+			padding: 11px 0;
+			color: #fff;
+			font-size: 1.9rem;
+			text-align: center;
+		}
+	}
+	.footer--inner {
+		padding-top: 5.2rem;
+		img, p {
+			display: inline-block;
+			//vertical-align: middle;
+		}
+		p {
+			margin: 0 35px;
+			font-size: 1.3rem;
+			font-weight: 300;
+		}
+	}
+}
+@media (max-width: 767px) {
+	header {
+		.header--menu {
+			display: block;
+		}
+	}
+	.header--inner {
+		height: 9rem;
+	}
+	nav {
+		display: none;
+		position: relative;
+		padding-top: 9rem;
+		background: #fff;
+		ul {
+			float: none;
+			display: block;
+			height: auto;
+		}
+		li {
+			display: block;
+			a {
+				display: block;
+				padding: 1.5rem 0 1.5rem 2.5rem;
+				font-size: 2rem;
+				text-decoration: none;
+				position: relative;
+				height: auto;
+				line-height: 1;
+			}
+		}
+	}
+	#main {
+		padding-top: 9rem;
+	}
+	.about-bg {
+		//height: 72.9rem;
+		//background-image: url(../images/main_bg_m.jpg);
+		// background-repeat: no-repeat;
+		// background-position: 50%;
+		// background-size: cover;
+	}
+	.about--title {
+		width: 70%;
+		padding-top: 9.4rem;
+    padding-bottom: 4rem;
+		margin: 0 auto;
+	}
+	.musical--schedule {
+		.musical--list {
+			li {
+				width: 35.6rem;
+			}
+		}
+	}
+	section h3 {
+		font-size: 4rem;
+	}
+	.musical--info {
+		h3 {
+			padding-top: 6.9rem;
+			padding-bottom: 4.6rem;
+		}
+	}
+}
