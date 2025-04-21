@@ -1,2 +1,7 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# 이미지나 바이너리는 diff 안 함
+*.png binary
+*.jpg binary
+*.psd binary
